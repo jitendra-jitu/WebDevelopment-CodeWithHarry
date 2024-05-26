@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        /* root is used to make global variables */
+        :root {
+            --color: red;
+            --seccolor: rgb(231, 215, 215);
+            --defpad: 30px;
+            --defop:0.5;
+        }
+
+        .one {
+            background-color: var(--color);
+        }
+
+        ul {
+            display: flex;
+
+        }
+
+        ul :first-child {
+            --color: rgb(95, 50, 190);
+            /* local variable */
+            background-color: var(--color);
+        }
+
+        ul li {
+            /* The opacity-level describes the transparency-level,
+            where 1 is not transparent at all,
+            0.5 is 50% see-through,
+            and 0 is completely transparent. */
+            opacity: var(--defop) ;
+            list-style: none;
+            /* padding: 30px; */
+            padding: var(--defpad);
+            border: 5px solid var(--seccolor);
+        }
+
+
+
+        .two {
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <ul>
+            <li>home </li>
+            <li>registration</li>
+            <li>settings</li>
+        </ul>
+    </div>
+    <div class="two">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque repellendus vel est quo, cumque
+        beatae amet deserunt ea exercitationem labore, dolore corrupti enim, illum sit. Debitis odit voluptas error
+        dolores quia voluptatum officiis incidunt, sint ea ratione, ullam provident aspernatur quae, eum eos ab.
+    </div>
+
+
+</body>
+
+</html>

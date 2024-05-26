@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        .of{
+            width: 20vh;
+            height:10vh;
+            border: 2px solid;
+            overflow: hidden;
+            text-overflow:ellipsis; 
+            white-space:nowrap
+            /* The white-space property specifies how white-space inside an element is handled */
+            /* Sequences of whitespace will collapse into a single whitespace. Text will never wrap to the next line. The text continues on the same line until a <br> tag is encountered */
+
+            /* Both of the following properties are required for text-overflow:
+                white-space: nowrap;
+                overflow: hidden; */
+
+            /* overflow-y: scroll;
+            overflow-x: scroll; */
+            /* overflow:scroll; */
+        }     
+    </style>
+</head>
+<body>
+    <div>
+        <p class="of">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nisi ex unde labore quae esse explicabo assumenda soluta debitis vel animi maiores veritatis eius sunt vero, quidem, recusandae fugit laudantium. Cumque, repellat. Voluptates inventore nobis voluptate, eius reiciendis a dolores veniam aperiam, asperiores vel, illo ad eaque dolor repellendus? Quisquam.</p>
+    </div>
+    
+</body>
+</html>
+        
+
+            

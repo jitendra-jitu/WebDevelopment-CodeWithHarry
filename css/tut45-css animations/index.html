@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 50vw;
+            background-color: aqua;
+        }
+        .box{
+            height: 5vh;
+            width: 5vw;
+            /* background-color: bisque; */
+
+            /* animation-name: JituAnimation;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 3s;
+            animation-iteration-count:infinite;
+            animation-play-state: paused;
+            animation-direction: alternate-reverse; */
+
+
+            /* Shorthand property combines six of the animation properties into a single property. */
+            /* Syntax---> 
+            animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: JituAnimation 3s ease-in-out 3s 1 alternate-reverse forwards  ; */
+
+            /* Defines what values are applied by the animation outside the time it is executing. */
+            /* animation-fill-mode: backwards ; */
+            /* fills the color properties in the time of the of the delay time only.....vice-versa to forwards..!! */
+
+            /* Appling multiple animations  */
+            animation: JituAnimation 2s ease-in-out 3s 1 ,
+                      JituAnimation2 3s ease-in-out 3s 1 ;
+
+
+
+        }
+        @keyframes JituAnimation{
+            from{
+                background-color:chartreuse;
+            }
+            to{
+                background-color: red;
+            }
+        }
+        @keyframes JituAnimation2 {
+            20%{
+                transform: rotate(100deg);
+            }
+            40%{
+                transform: rotate(120deg);
+            }
+            60%{
+                transform: rotate(180deg);
+            }
+            80%{
+                transform: rotate(260deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }   
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>

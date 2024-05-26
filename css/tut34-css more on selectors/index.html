@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS MORE ON selectors</title>
+    <style>
+        /* .box:first-child {
+            border: 2px solid;
+        } */
+
+        /* .box::first-line{
+            color: red;
+        } */
+
+
+        /* .box::first-letter{
+            color: rgb(255, 0, 51);
+            font-size:45px;
+        }
+        */
+
+
+        /* .boxes *{
+            color: aqua;
+        } */
+
+        /* .box:nth-child(odd){
+            color: aqua;
+        } */
+
+
+        /* grouping ---> */
+        /* p,a,.box{
+            color: brown;
+        } */
+
+        /* .box:nth-last-child(1){
+            background-color: green;
+        } */
+
+
+        /* dynamical insertion of element through css */
+        /* .boxes:before{
+            content: "jitu is good";
+            background-color: blue;
+        } */
+
+
+        /* both color and background colors are needed for selection of the ::content */
+        /* ::selection{
+            background-color: black;
+            color: chocolate;
+            cursor:cell;
+            outline: auto;
+        } */
+
+        /* text inside the input box  */
+        /* input::placeholder{
+            color: green;
+        } */
+
+        
+        
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <p>this is para</p>
+        <a>this is anchor</a>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod minus iusto nemo alias deserunt aperiam. Illo beatae optio consequatur?</div>
+        <div class="box">https://www.geeksforgeeks.org/css-cursor-property/</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <input type="text" placeholder="type your  name">
+        
+    </div>
+</body>
+</html>

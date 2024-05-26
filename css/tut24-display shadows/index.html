@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display shadows</title>
+    <style>
+        div{
+            border: solid ;
+            border-color: brown;
+            padding: 20px;
+            /* box-shadow: h-offset v-offset blur spread color inset; */
+            /* inset- makes the shadow inner  */
+            box-shadow: 12px 10px 10px green  ;
+            
+        }
+        h1{
+            /* text-shadow: h-offset v-offset blur color; */
+            text-shadow: 2px 3px 4px red;
+            outline: 12px solid black;
+            outline-offset: 3px;
+            /* outline-offset --> gap b/w outline & border  */
+            border: 10px solid green;
+            /* border-radius: 25px; */
+            /* defines the radii of the outer border edge  */
+
+        }
+            
+            
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>displaying shadows:</p>
+        <p>->  default is outset  in  box-shadow</p>
+    </div>
+    
+    <h1>text shadow</h1>
+    
+</body>
+</html>

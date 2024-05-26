@@ -1,0 +1,381 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: sans-serif;
+    background-color: black;
+}
+.main{
+    background-image: url(assets/images/bg.jpg);
+    height: 95vh;
+    width: 100vw;
+    position: relative;
+    background-position: bottom  right ;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+}
+.main .box{
+    height: 95vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.77;
+    position: absolute;
+    top:0;
+}
+nav{
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.button{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+    
+nav img{
+    position: relative;
+    z-index:10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.eng{
+    display: flex;
+    gap: 6px;
+}
+.box{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: sans-serif;
+    row-gap: 16px;
+    
+}
+.box :nth-child(1){
+    /* font-family: sans-serif; */
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+.box :nth-child(2){
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+}
+.box :nth-child(3){
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+.box :nth-child(4){
+    /* background-color: black; */
+    /* opacity: 0.44; */
+    font-size: 1em;
+    padding: 12px 20px;
+    /* height: 14px; */
+    background-color: black;
+    border: 1px solid white;
+    
+    
+
+}
+.box :last-child{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+::placeholder{
+    font-size: 13px;
+    text-align: start;
+}
+.button2{
+    display: flex;
+    justify-content: center;
+    font-weight:lighter; 
+    padding: 7px;
+    border-radius: 4px;
+    border-style: none;
+}
+.line{
+    height: 6px;
+    background-color: rgb(35, 35, 35);
+}
+.first{
+    font-family: sans-serif;
+    height: 75vh;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.text :nth-child(1){
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+.text :nth-child(2){
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.imgsec{
+    position: relative;
+}
+.imgsec img{
+    position: relative;
+    z-index: 10;
+    width: 40vw;
+    left: 65px;
+}
+.imgsec video{
+    height: inherit;
+    width: 30vw;
+    position: absolute;
+    top: 70px;
+    left: 125px;
+}
+.c2left{
+    right: 130px;
+}
+.template img{
+    width: 50px;
+}
+.template{
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 80px;
+    position: relative;
+    left: 150px;
+    border: 0.5px solid ;
+    border-radius: 10px;
+    bottom: 4px;
+}
+.template div{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.8em;
+}
+.icon{
+    position: relative;
+    left: -80px;
+}
+.c3 img{
+    margin: 30px -45px ;
+}
+.c3 video{
+    max-width: 24vw;
+}
+.c4 img{
+    left: 0px;
+}
+h1{
+    margin: 50px auto 20px;
+    text-align: center;
+    color: #414141;;
+}
+.questions{
+    /* height: 75vh; */
+    display: flex;
+    flex-direction: column;
+    font-size: 3em;
+    font-weight: 400;
+    cursor: pointer;
+}
+.item{
+    width: 80vw;
+    height: 12vh;
+    margin: auto;
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item img{
+    padding: 20px;
+    background-color: #2d2d2d;
+
+
+}
+.item :hover{
+    background-color: #414141;
+    transition: all 2s ease-out;
+}
+    
+   
+.item button{
+    position: relative;
+    text-align: left;
+    width: inherit;
+    background-color: #2d2d2d;
+    border-style: none;
+    padding: 25px;
+    color: white;
+    cursor: pointer;
+}
+.bt2{
+    display: flex;
+    justify-content: center;
+}
+.box2{
+    height: 30vh;
+}
+.box2 input{
+    font-size: 1em;
+    padding: 12px 20px;
+    
+    background-color: black;
+    border: 1px solid white;
+}
+footer{
+    height: 50vh;
+    
+    Color:rgba(255, 255, 255, 0.7);
+    font-size: 0.7em;
+    font-weight:100;
+}
+
+.final{
+    max-width: 80vw;
+    max-height: 30vh;
+    margin: 10vh auto ;
+    display: flex;
+    gap: 130px;
+
+    
+}
+
+.one{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-content: space-around; */
+    text-decoration: underline;
+}
+footer span{
+    position: relative;
+    top: 50px;
+    left: 113px;
+
+}
+footer button{
+    position: relative;
+    bottom: 55px;
+    left: 113px;
+    cursor: pointer;
+}
+.end{
+    position: relative;
+    top: -35px;
+}
+@media screen and (max-width:500px){
+    .body{
+        text-align: center;
+        max-width:max-content;
+    }
+    .main{
+        height: 150vh;
+        background-position: center;
+    }
+    .box{
+        flex-wrap: wrap;
+        width: 150vw;
+        
+    }
+    .imgsec img{
+        width: 30vw;
+        font-size: 10px;
+        justify-content: center;
+    }
+        
+    .imgsec video{
+        width:30vw;
+        justify-content: center;
+        
+    }
+    .final{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        justify-content: center;
+    }
+    .box :nth-child(1){
+        font-size: 22px;
+    }
+    .box :nth-child(2){
+        font-size: 12px;
+    }
+    .box :nth-child(3){
+        font-size: 12px;
+    }
+    .text{
+        font-size: 12px;
+    }
+    .box :nth-child(4){
+        width: 30vw;
+    }
+    #input{
+        min-width: 35vw;
+    }
+    .template{
+        max-width:40vw ;
+    }
+    
+    
+
+
+    
+} 
+@media screen and (max-width:500px){
+    .first{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+    footer{
+        text-wrap: nowrap;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+}
+
+
+
+    
+
+    
+    
+
+
+    
