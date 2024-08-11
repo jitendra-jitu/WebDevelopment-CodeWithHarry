@@ -194,11 +194,13 @@ document.querySelector(".container").children[1].replaceWith(div1)
 // Parameter  ->	Description
 // position	  ->    Required.
 // A position relative to the element:
-// 1 afterbegin
-// 2 afterend
-// 3 beforebegin
-// 4 beforeend
-// text	      ->    The text to insert.
+
+// Value	            Description
+// 1 afterbegin	        After the beginning of the element (first child)
+// 2 afterend	        After the element
+// 3 beforebegin	    Before the element
+// 4 beforeend	        Before the end of the element (last child)
+// text	          ->    The text to insert.
 
 let div2=document.createElement("div");
 div2.innerHTML="<b>insertAdjacentElement </b>"

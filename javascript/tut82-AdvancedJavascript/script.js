@@ -45,6 +45,10 @@ const sleep = async ()=>{
         }, 1000);
     })
 }
+// let a = await sleep()
+    // console.log(a)
+    // let b = await sleep()
+    // console.log(b);
 
 
 console.log(a1);

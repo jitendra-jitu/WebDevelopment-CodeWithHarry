@@ -1,1 +1,1 @@
-console.log(Array(4))
+console.log("white");
