@@ -77,11 +77,11 @@ async function main() {
     play.addEventListener("click",()=>{
         if(currentsong.paused){
             currentsong.play();
-            play.src="playbtn.svg";
+            play.src="pause.svg";
         }
         else{
             currentsong.pause();
-            play.src="pause.svg";
+            play.src="playbtn.svg";
         }
     })
 
