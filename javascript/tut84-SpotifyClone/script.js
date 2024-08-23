@@ -24,7 +24,7 @@ async function getsongs(folder) {
 
     currentfolder = folder;
 
-    let a = await fetch(`http://127.0.0.1:3000/songs/${folder}/`);
+    let a = await fetch(`songs/${folder}/`);
     let response = await a.text();
     // console.log(response)
 
@@ -51,14 +51,14 @@ async function getsongs(folder) {
 
     for (const song of songs) {
         songsUl.innerHTML = songsUl.innerHTML + `<li>
-                            <img  src="music.svg" alt="" srcset="">
+                            <img  src="svg/music.svg" alt="" srcset="">
                             <div class="info">
                                 <div>${song.replaceAll("%20", " ")}</div>
                                 <div>Jitu</div>
                             </div>
                             <div class="playnow">
                                 <span>playnow</span>
-                                <img class="invert" src="playbtn.svg" alt="">
+                                <img class="invert" src="svg/playbtn.svg" alt="">
                             </div>
                         </li>`;
     }
@@ -79,15 +79,15 @@ async function getsongs(folder) {
         e.addEventListener("click", element => {
             console.log(e.querySelector(".info").firstElementChild.innerHTML);
             playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim());
-            if (document.querySelector("#play").src = "playbtn.svg") {
-                document.querySelector("#play").src = "pause.svg"
+            if (document.querySelector("#play").src = "svg/playbtn.svg") {
+                document.querySelector("#play").src = "svg/pause.svg"
             }
         })
 
     ])
 
 
-    // return songs;
+    return songs;
 }
 
 
@@ -120,7 +120,7 @@ function formatTime(seconds) {
 
 
 async function DisplayAlbums() {
-    let a = await fetch(`http://127.0.0.1:3000/songs`);
+    let a = await fetch(`songs`);
     let response = await a.text();
     // console.log(response)
 
@@ -142,7 +142,7 @@ async function DisplayAlbums() {
         if (e.href.includes("/songs")) {
             folder = e.href.split("/").slice(-2)[0];
 
-            let a = await fetch(`http://127.0.0.1:3000/songs/${folder}/info.json`);
+            let a = await fetch(`songs/${folder}/info.json`);
             let response = await a.json();
 
             cardContainer.innerHTML +=
@@ -177,6 +177,7 @@ async function DisplayAlbums() {
             console.log(item.currentTarget, item.currentTarget.dataset)
             let list = await getsongs(`${item.currentTarget.dataset.folder}`)
             console.log(list)
+            playMusic(songs[0])
         })
     })
 
@@ -210,11 +211,11 @@ async function main() {
     play.addEventListener("click", () => {
         if (currentsong.paused) {
             currentsong.play();
-            play.src = "pause.svg";
+            play.src = "svg/pause.svg";
         }
         else {
             currentsong.pause();
-            play.src = "playbtn.svg";
+            play.src = "svg/playbtn.svg";
         }
     })
 
