@@ -1,0 +1,21 @@
+{
+  "name": "com.jitu",
+  "version": "1.0.0",
+  "description": "Cloning Spotify Application",
+  "main": "Server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "dev":"nodemon main.js"
+  },
+  "keywords": [
+    "Spotify"
+  ],
+  "author": "jitu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "slugify": "^1.6.6"
+  }
+}
