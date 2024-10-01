@@ -49,12 +49,20 @@ async function getsongs(folder) {
     let songsUl = document.querySelector(".songs-list").getElementsByTagName("ul")[0];
     songsUl.innerHTML = "";
 
+
+
+    let info = await fetch(`songs/${folder}/info.json`);
+    let jsondata = await info.json();
+
+
+   
+
     for (const song of songs) {
         songsUl.innerHTML = songsUl.innerHTML + `<li>
                             <img  src="svg/music.svg" alt="" srcset="">
                             <div class="info">
                                 <div>${song.replaceAll("%20", " ")}</div>
-                                <div>Jitu</div>
+                                <div>${jsondata.Name}</div>
                             </div>
                             <div class="playnow">
                                 <span>playnow</span>
