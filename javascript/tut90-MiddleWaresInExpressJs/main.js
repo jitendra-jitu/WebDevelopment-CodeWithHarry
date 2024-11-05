@@ -34,7 +34,7 @@ app.use((req,res,next)=>{
 
     console.log("middleware m1");
 
-    fs.appendFileSync("fs/MiddlewareFile.txt",`${new Date(Date.now()).toTimeString()}, is a ${req.method}\n`)
+    fs.appendFileSync("fs/MiddlewareFile.txt",`${new Date(Date.now()).toTimeString()}, Got an ${req.method}\n`)
 
     // res.send("Response sent from Middleware_1");
     // its directly send the response to the client without allowing it to next() 
