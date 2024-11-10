@@ -26,41 +26,45 @@
  
 </style>
 
-<body class="bg-black text-white cursor-pointer flex items-start space-x-4">
+<body class="bg-black text-white cursor-pointer flex items-start md:space-x-4">
 
 
 
-  <div class="first w-[16vw] ml-[8vw] pt-3 h-screen relative overflow-hidden">
-    <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 ml-3 invert">
+  <div class="first w-[16vw] ml-2 md:ml-[8vw] pt-3 h-screen relative overflow-hidden">
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 md:ml-3 invert">
       <g>
         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
       </g>
     </svg>
+    </span>
+    <div class="flex flex-col space-y-2 mt-6 gap-3 md:gap-0">
+      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 md:px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">home</span><span class="hidden md:block">Home</span></span></span>
+      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 md:px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">search</span><span class="hidden md:block">Explore</span></span></span>
+      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 md:px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">notifications</span><span class="hidden md:block">Notifications</span></span></span>
+      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 md:px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">mail</span><span class="hidden md:block">Messages</span></span></span>
+      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 md:px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">home</span><span class="hidden md:block">Grok</span></span></span>
+      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 md:px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">group</span><span class="hidden md:block">Communities</span></span></span>
+      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 md:px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">workspace_premium</span><span class="hidden md:block">Premium</span></span></span>
+      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 md:px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">flash_on</span><span class="hidden md:block">Verified Orgs</span></span></span>
+      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 md:px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">person</span><span class="hidden md:block">Profile</span></span></span>
+      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 md:px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">more_horiz</span><span class="hidden md:block">More</span></span></span>
+    </div>
+
+    <div class="postbtn bg-sky-500 relative w-10/12 p-2 md:w-full py-2 text-center rounded-full md:mr-4 items-center my-3">
+      <button class="text-xs font-semibold md:font-bold md:text-lg p-0 h-6 md:h-full">
+        Post
+      </button>
+    </div>
     
-    <div class="flex flex-col space-y-2 mt-6">
-      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">home</span>Home</span></span>
-      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">search</span>Explore</span></span>
-      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">notifications</span>Notifications</span></span>
-      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">mail</span>Messages</span></span>
-      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 px-3  font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">home</span>Grok</span></span>
-      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">group</span>Communities</span></span>
-      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">workspace_premium</span>Premium</span></span>
-      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">flash_on</span>Verified Orgs</span></span>
-      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">person</span>Profile</span></span>
-      <span class="block"><span class="inline-flex items-center gap-4 pb-2 pt-1 px-3 font-medium text-xl hover:bg-zinc-900 hover:rounded-3xl"><span class="material-symbols-outlined text-[30px]">more_horiz</span>More</span></span>
-    </div>
+    
 
-    <div class="postbtn bg-sky-500 py-3 text-center rounded-full mr-9 my-3">
-      <button class="font-bold text-lg ">Post</button>
-    </div>
-
-    <div class="profile flex gap-4 px-4 relative mt-12 items-center">
+    <div class="profile flex gap-4 md:px-4 relative mt-12 items-center">
       <img class="w-10 h-10 rounded-full" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="">
-      <div class="names">
+      <div class="names hidden md:block">
         <div class="displayname">jitendra jitu</div>
         <div class="username text-gray-500">@jitendr70901231</div>
       </div>
-      <svg viewBox="0 0 24 24" aria-hidden="true" class="w-7 pl-3">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="w-7 md:pl-3">
           <g>
             <path fill="white" d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2z"></path>
           </g>
@@ -76,16 +80,18 @@
 
     <!-- Second (Content) Section -->
 
-    <div class="second w-[40vw] h-screen bg-black border-r border-l border-[#424548] z-10 overflow-y-auto custom-scrollbar">
+    <div class="second  w-fit md:w-[40vw] h-screen bg-black border-r border-l border-[#424548] z-10 overflow-y-auto custom-scrollbar">
+      
       <div class="top flex  border-b border-[rgb(74,76,79)] sticky top-0 bg-black opacity-70">
+
         <div class="py-4 w-1/4 text-white  font-bold cursor-pointer text-center hover:bg-[#1d1d1d] flex flex-col items-center">
           <span class="">For you</span>
           <div class="h-1 absolute bottom-0 w-14 bg-sky-500 rounded-sm"></div>
       </div>
       
 
-        <div class="py-4 w-1/4 text-[#71767b] cursor-pointer text-center hover:bg-[#1d1d1d]">Following</div>
-        <div class="py-4 w-1/2 text-[#71767b] cursor-pointer text-center hover:bg-[#1d1d1d]">Medical and Health Education</div>
+        <div class="py-4 w-1/4 text-[#71767b] text-sm md:text-base cursor-pointer text-center hover:bg-[#1d1d1d]">Following</div>
+        <div class="py-4 w-1/2 text-[#71767b] text-sm md:text-base cursor-pointer text-center hover:bg-[#1d1d1d]">Medical and Health Education</div>
       </div>
 
     <div class="whtshappening flex flex-col p-4 gap-2  border-b border-[rgb(74,76,79)]">
@@ -108,7 +114,7 @@
           
       <div class="otheroptions flex items-center pl-12  justify-between ">
 
-      <div class="icons flex gap-4">
+      <div class="icons flex gap-2 md:gap-4">
         <svg  width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g>
             <path d="M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v9.086l3-3 3 3 5-5 3 3V5.5c0-.276-.224-.5-.5-.5h-13zM19 15.414l-3-3-5 5-3-3-3 3V18.5c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-3.086zM9.75 7C8.784 7 8 7.784 8 8.75s.784 1.75 1.75 1.75 1.75-.784 1.75-1.75S10.716 7 9.75 7z" 
@@ -159,7 +165,7 @@
 
       <div class="post flex p-3 gap-2 border border-t-1 border-[rgb(74,76,79)]">
 
-        <img class="h-10 rounded-full " src="https://pbs.twimg.com/profile_images/1849727333617573888/HBgPUrjG_400x400.jpg" alt="">     
+        <img class="h-7 md:h-10 rounded-full " src="https://pbs.twimg.com/profile_images/1849727333617573888/HBgPUrjG_400x400.jpg" alt="">     
         <div class="posteduserdetails">
           <div class="posteduserinfo">
             <div class="username_displayname"><span class="flex gap-1"><span class="font-bold hover:underline hover:decoration-1">Elon Musk</span><svg viewBox="0 0 24 24" class="w-4 h-4 text-sky-500 text-center relative top-1 " fill="currentColor" xmlns="http://www.w3.org/2000/svg"> 
@@ -172,7 +178,7 @@
                </svg><img class="h-4 relative -bottom-1" src="https://pbs.twimg.com/profile_images/1683899100922511378/5lY42eHs_bigger.jpg" alt="" srcset=""><span class="text-[#71767b]">@elonmusk . 10h</span></span></div>
               <div class="desc">
 
-                <span>It is morning in America again </span><br>
+                <!-- <span>It is morning in America again </span><br> -->
               </div>
           </div>
 
@@ -237,7 +243,254 @@
 
       <div class="post flex p-3 gap-2 border border-t-1 border-[rgb(74,76,79)]">
 
-        <img class="h-10 rounded-full " src="https://pbs.twimg.com/profile_images/1849727333617573888/HBgPUrjG_400x400.jpg" alt="">     
+        <img class="h-7 md:h-10 rounded-full " src="https://pbs.twimg.com/profile_images/1815489891108544512/H4o8ID3n_400x400.jpg" alt="">     
+        <div class="posteduserdetails">
+          <div class="posteduserinfo">
+            <div class="username_displayname"><span class="flex gap-1"><span class="font-bold hover:underline hover:decoration-1">Donald J. Trump</span><svg viewBox="0 0 24 24" class="w-4 h-4 text-sky-500 text-center relative top-1 " fill="currentColor" xmlns="http://www.w3.org/2000/svg"> 
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                  <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" fill="currentColor" stroke="currentColor" stroke-width="1.5"></path>
+                  <path d="M9 12L11 14L15 10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+               </svg><span class="text-[#71767b]">@elonmusk . 10h</span></span></div>
+              <div class="desc">
+
+                <span>Do you agree that BLM and Pride Flags should be banned from classrooms?<br><br>
+
+                  YES or NO?<br><br>
+                  
+                  If YES, I will follow you back </span><br>
+              </div>
+          </div>
+
+          <img class="mt-4 mr-4 rounded-xl" src="https://pbs.twimg.com/media/Gb3b4jdXgAAEQl1?format=jpg&name=small" alt="" srcset="">
+
+ 
+          <div class="reactions flex justify-between my-3">
+
+            <div class="comment text-sm text-[#71767b] flex group hover:text-blue-600">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b] group-hover:text-blue-600" fill="currentColor">
+                <g>
+                  <path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path>
+                </g>
+              </svg>
+              <span class="ml-1 group-hover:text-blue-600">4.9K</span>
+            </div>
+            
+            <div class="retweet text-sm text-[#71767b] flex group hover:text-green-700">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b] group-hover:text-green-600" fill="currentColor">
+                <g>
+                    <path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path>
+                </g>
+            </svg>
+            <span class="ml-1 group-hover:text-green-700">20K</span>
+            </div>
+
+            <div class="like text-sm text-[#71767b] flex group hover:text-pink-700">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b] ml-1 group-hover:text-pink-700" fill="currentColor">
+                <g>
+                    <path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path>
+                </g>
+            </svg>
+            <span class="ml-1 group-hover:text-pink-700">130K</span>
+            </div>
+
+            <div class="view text-sm text-[#71767b] flex group hover:text-blue-600">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="group-hover:text-blue-600 h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b]" fill="currentColor">
+                <g>
+                    <path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path>
+                </g>
+            </svg>  
+            <span class="ml-1 group-hover:text-blue-600">18M</span>
+            </div>
+
+            <div class="save_share text-sm text-[#71767b] flex gap-2">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="hover:text-blue-600 h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b]" fill="currentColor">
+                <g>
+                    <path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"></path>
+                </g>
+            </svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="hover:text-blue-600 h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b]" fill="currentColor">
+                <g>
+                    <path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"></path>
+                </g>
+            </svg>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="post flex p-3 gap-2 border border-t-1 border-[rgb(74,76,79)]">
+
+        <img class="h-7 md:h-10 rounded-full " src="https://pbs.twimg.com/profile_images/1833509376528945157/5AeMNn9f_400x400.jpg" alt="">     
+        <div class="posteduserdetails">
+          <div class="posteduserinfo">
+            <div class="username_displayname"><span class="flex gap-1"><span class="font-bold hover:underline hover:decoration-1">Narendra Modi</span><svg viewBox="0 0 24 24" class="w-4 h-4 text-sky-500 text-center relative top-1 " fill="currentColor" xmlns="http://www.w3.org/2000/svg"> 
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                  <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" fill="currentColor" stroke="currentColor" stroke-width="1.5"></path>
+                  <path d="M9 12L11 14L15 10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+               </svg><img class="h-4 relative -bottom-1" src="https://pbs.twimg.com/profile_images/1833509376528945157/5AeMNn9f_400x400.jpg" alt="" srcset=""><span class="text-[#71767b]">@elonmusk . 10h</span></span></div>
+              <div class="desc">
+
+                <span>Went to Advani Ji's residence and wished him on his birthday. </span><br>
+              </div>
+          </div>
+
+          <img class="mt-4 mr-4 rounded-xl" src="https://pbs.twimg.com/media/Gb3jjMEW4AApE29?format=jpg&name=large" alt="" srcset="">
+
+ 
+          <div class="reactions flex justify-between my-3">
+
+            <div class="comment text-sm text-[#71767b] flex group hover:text-blue-600">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b] group-hover:text-blue-600" fill="currentColor">
+                <g>
+                  <path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path>
+                </g>
+              </svg>
+              <span class="ml-1 group-hover:text-blue-600">4.9K</span>
+            </div>
+            
+            <div class="retweet text-sm text-[#71767b] flex group hover:text-green-700">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b] group-hover:text-green-600" fill="currentColor">
+                <g>
+                    <path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path>
+                </g>
+            </svg>
+            <span class="ml-1 group-hover:text-green-700">20K</span>
+            </div>
+
+            <div class="like text-sm text-[#71767b] flex group hover:text-pink-700">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b] ml-1 group-hover:text-pink-700" fill="currentColor">
+                <g>
+                    <path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path>
+                </g>
+            </svg>
+            <span class="ml-1 group-hover:text-pink-700">130K</span>
+            </div>
+
+            <div class="view text-sm text-[#71767b] flex group hover:text-blue-600">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="group-hover:text-blue-600 h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b]" fill="currentColor">
+                <g>
+                    <path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path>
+                </g>
+            </svg>  
+            <span class="ml-1 group-hover:text-blue-600">18M</span>
+            </div>
+
+            <div class="save_share text-sm text-[#71767b] flex gap-2">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="hover:text-blue-600 h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b]" fill="currentColor">
+                <g>
+                    <path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"></path>
+                </g>
+            </svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="hover:text-blue-600 h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b]" fill="currentColor">
+                <g>
+                    <path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"></path>
+                </g>
+            </svg>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="post flex p-3 gap-2 border border-t-1 border-[rgb(74,76,79)]">
+
+        <img class="h-7 md:h-10 rounded-full " src="https://pbs.twimg.com/profile_images/1849116810290831360/YMxqVvcd_400x400.jpg" alt="">     
+        <div class="posteduserdetails">
+          <div class="posteduserinfo">
+            <div class="username_displayname"><span class="flex gap-1"><span class="font-bold hover:underline hover:decoration-1">Rashmika Mandanna</span><svg viewBox="0 0 24 24" class="w-4 h-4 text-sky-500 text-center relative top-1 " fill="currentColor" xmlns="http://www.w3.org/2000/svg"> 
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                  <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" fill="currentColor" stroke="currentColor" stroke-width="1.5"></path>
+                  <path d="M9 12L11 14L15 10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+               </svg><img class="h-4 relative -bottom-1" src="https://pbs.twimg.com/profile_images/1683899100922511378/5lY42eHs_bigger.jpg" alt="" srcset=""><span class="text-[#71767b]">@elonmusk . 10h</span></span></div>
+              <div class="desc">
+            <span>Kubera is comingggg! 🥰                <br><br>
+              <span class="hover:underline decoration-[#1d9bf0] hover:underline-offset-1 underline-offset-2 text-[#1d9bf0]">#SekharKammulasKubera ❤️‍🔥</span><br><br>
+              <span class="hover:underline decoration-[#1d9bf0] hover:underline-offset-1 underline-offset-2 text-[#1d9bf0]">#KuberaGlimpse in 𝟓 𝐃ays ⏳</span><br><br>
+              <span class="hover:underline decoration-[#1d9bf0] hover:underline-offset-1 underline-offset-2 text-[#1d9bf0]">@dhanushkraja</span>
+              <span class="hover:underline decoration-[#1d9bf0] hover:underline-offset-1 underline-offset-2 text-[#1d9bf0]">@iamnagarjuna</span>
+              <span class="hover:underline decoration-[#1d9bf0] hover:underline-offset-1 underline-offset-2 text-[#1d9bf0]">@sekharkammula</span>
+              <span class="hover:underline decoration-[#1d9bf0] hover:underline-offset-1 underline-offset-2 text-[#1d9bf0]">@jimSarbh</span>
+              <span class="hover:underline decoration-[#1d9bf0] hover:underline-offset-1 underline-offset-2 text-[#1d9bf0]">@ThisIsDSP</span>
+              <span class="hover:underline decoration-[#1d9bf0] hover:underline-offset-1 underline-offset-2 text-[#1d9bf0]">@AsianSuniel</span>
+              <span class="hover:underline decoration-[#1d9bf0] hover:underline-offset-1 underline-offset-2 text-[#1d9bf0]">@KuberaTheMovie</span>
+              <span class="hover:underline decoration-[#1d9bf0] hover:underline-offset-1 text-[#1d9bf0]">#Kubera #KuberaGlimpseOnNov15th</span><br>
+              
+              </div>
+          </div>
+
+          <img class="mt-4 mr-4 rounded-xl h-[90vh]" src="https://pbs.twimg.com/media/GcAX7VjbQAAtJK2?format=jpg&name=900x900" alt="" srcset="">
+          
+          <div class="reactions flex justify-between my-3">
+
+            <div class="comment text-sm text-[#71767b] flex group hover:text-blue-600">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b] group-hover:text-blue-600" fill="currentColor">
+                <g>
+                  <path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path>
+                </g>
+              </svg>
+              <span class="ml-1 group-hover:text-blue-600">4.9K</span>
+            </div>
+            
+            <div class="retweet text-sm text-[#71767b] flex group hover:text-green-700">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b] group-hover:text-green-600" fill="currentColor">
+                <g>
+                    <path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path>
+                </g>
+            </svg>
+            <span class="ml-1 group-hover:text-green-700">20K</span>
+            </div>
+
+            <div class="like text-sm text-[#71767b] flex group hover:text-pink-700">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b] ml-1 group-hover:text-pink-700" fill="currentColor">
+                <g>
+                    <path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path>
+                </g>
+            </svg>
+            <span class="ml-1 group-hover:text-pink-700">130K</span>
+            </div>
+
+            <div class="view text-sm text-[#71767b] flex group hover:text-blue-600">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="group-hover:text-blue-600 h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b]" fill="currentColor">
+                <g>
+                    <path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path>
+                </g>
+            </svg>  
+            <span class="ml-1 group-hover:text-blue-600">18M</span>
+            </div>
+
+            <div class="save_share text-sm text-[#71767b] flex gap-2">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="hover:text-blue-600 h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b]" fill="currentColor">
+                <g>
+                    <path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"></path>
+                </g>
+            </svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="hover:text-blue-600 h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b]" fill="currentColor">
+                <g>
+                    <path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"></path>
+                </g>
+            </svg>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="post flex p-3 gap-2 border border-t-1 border-[rgb(74,76,79)]">
+
+        <img class="h-7 md:h-10 rounded-full " src="https://pbs.twimg.com/profile_images/1849727333617573888/HBgPUrjG_400x400.jpg" alt="">     
         <div class="posteduserdetails">
           <div class="posteduserinfo">
             <div class="username_displayname"><span class="flex gap-1"><span class="font-bold hover:underline hover:decoration-1">Elon Musk</span><svg viewBox="0 0 24 24" class="w-4 h-4 text-sky-500 text-center relative top-1 " fill="currentColor" xmlns="http://www.w3.org/2000/svg"> 
@@ -314,84 +567,7 @@
 
       <div class="post flex p-3 gap-2 border border-t-1 border-[rgb(74,76,79)]">
 
-        <img class="h-10 rounded-full " src="https://pbs.twimg.com/profile_images/1849727333617573888/HBgPUrjG_400x400.jpg" alt="">     
-        <div class="posteduserdetails">
-          <div class="posteduserinfo">
-            <div class="username_displayname"><span class="flex gap-1"><span class="font-bold hover:underline hover:decoration-1">Elon Musk</span><svg viewBox="0 0 24 24" class="w-4 h-4 text-sky-500 text-center relative top-1 " fill="currentColor" xmlns="http://www.w3.org/2000/svg"> 
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
-                  <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" fill="currentColor" stroke="currentColor" stroke-width="1.5"></path>
-                  <path d="M9 12L11 14L15 10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </g>
-               </svg><img class="h-4 relative -bottom-1" src="https://pbs.twimg.com/profile_images/1683899100922511378/5lY42eHs_bigger.jpg" alt="" srcset=""><span class="text-[#71767b]">@elonmusk . 10h</span></span></div>
-              <div class="desc">
-                <span>Below are the R minus D early vote deltas in swing states before tomorrow. </span><br><br>
-                <span>Republican turnout on election day is usually much higher than Democrat, so any state currently leaning R in early voting is very likely to side with Trump.</span>
-              </div>
-          </div>
-
-          <img class="mt-4 mr-4 rounded-xl" src="https://pbs.twimg.com/media/GbmiolFXEAA7uM3?format=jpg&name=medium" alt="" srcset="">
-          
-          <div class="reactions flex justify-between my-3">
-
-            <div class="comment text-sm text-[#71767b] flex group hover:text-blue-600">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b] group-hover:text-blue-600" fill="currentColor">
-                <g>
-                  <path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path>
-                </g>
-              </svg>
-              <span class="ml-1 group-hover:text-blue-600">4.9K</span>
-            </div>
-            
-            <div class="retweet text-sm text-[#71767b] flex group hover:text-green-700">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b] group-hover:text-green-600" fill="currentColor">
-                <g>
-                    <path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path>
-                </g>
-            </svg>
-            <span class="ml-1 group-hover:text-green-700">20K</span>
-            </div>
-
-            <div class="like text-sm text-[#71767b] flex group hover:text-pink-700">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b] ml-1 group-hover:text-pink-700" fill="currentColor">
-                <g>
-                    <path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path>
-                </g>
-            </svg>
-            <span class="ml-1 group-hover:text-pink-700">130K</span>
-            </div>
-
-            <div class="view text-sm text-[#71767b] flex group hover:text-blue-600">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="group-hover:text-blue-600 h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b]" fill="currentColor">
-                <g>
-                    <path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path>
-                </g>
-            </svg>  
-            <span class="ml-1 group-hover:text-blue-600">18M</span>
-            </div>
-
-            <div class="save_share text-sm text-[#71767b] flex gap-2">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="hover:text-blue-600 h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b]" fill="currentColor">
-                <g>
-                    <path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"></path>
-                </g>
-            </svg>
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="hover:text-blue-600 h-5 w-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi text-[#71767b]" fill="currentColor">
-                <g>
-                    <path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"></path>
-                </g>
-            </svg>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-      <div class="post flex p-3 gap-2 border border-t-1 border-[rgb(74,76,79)]">
-
-        <img class="h-10 rounded-full " src="https://pbs.twimg.com/profile_images/1849727333617573888/HBgPUrjG_400x400.jpg" alt="">     
+        <img class="h-7 md:h-10 rounded-full" src="https://pbs.twimg.com/profile_images/1849727333617573888/HBgPUrjG_400x400.jpg" alt="">     
         <div class="posteduserdetails">
           <div class="posteduserinfo">
             <div class="username_displayname"><span class="flex gap-1"><span class="font-bold">Elon Musk</span><svg viewBox="0 0 24 24" class="w-4 h-4 text-sky-500 text-center relative top-1 " fill="currentColor" xmlns="http://www.w3.org/2000/svg"> 
@@ -466,7 +642,7 @@
       </div>
       <div class="post flex p-3 gap-2 border border-t-1 border-[rgb(74,76,79)]">
 
-        <img class="h-10 rounded-full " src="https://pbs.twimg.com/profile_images/1849727333617573888/HBgPUrjG_400x400.jpg" alt="">     
+        <img class="h-7 md:h-10 rounded-full" src="https://pbs.twimg.com/profile_images/1849727333617573888/HBgPUrjG_400x400.jpg" alt="">     
         <div class="posteduserdetails">
           <div class="posteduserinfo">
             <div class="username_displayname"><span class="flex gap-1"><span class="font-bold hover:underline hover:decoration-1">Elon Musk</span><svg viewBox="0 0 24 24" class="w-4 h-4 text-sky-500 text-center relative top-1 " fill="currentColor" xmlns="http://www.w3.org/2000/svg"> 
@@ -543,7 +719,7 @@
 
       <div class="post flex p-3 gap-2 border border-t-1 border-[rgb(74,76,79)]">
 
-        <img class="h-10 rounded-full " src="https://pbs.twimg.com/profile_images/1849727333617573888/HBgPUrjG_400x400.jpg" alt="">     
+        <img class="h-7 md:h-10 rounded-full" src="https://pbs.twimg.com/profile_images/1849727333617573888/HBgPUrjG_400x400.jpg" alt="">     
         <div class="posteduserdetails">
           <div class="posteduserinfo">
             <div class="username_displayname"><span class="flex gap-1"><span class="font-bold">Elon Musk</span><svg viewBox="0 0 24 24" class="w-4 h-4 text-sky-500 text-center relative top-1 " fill="currentColor" xmlns="http://www.w3.org/2000/svg"> 
@@ -618,7 +794,7 @@
       </div>
       <div class="post flex p-3 gap-2 border border-t-1 border-[rgb(74,76,79)]">
 
-        <img class="h-10 rounded-full " src="https://pbs.twimg.com/profile_images/1849727333617573888/HBgPUrjG_400x400.jpg" alt="">     
+        <img class="h-7 md:h-10 rounded-full" src="https://pbs.twimg.com/profile_images/1849727333617573888/HBgPUrjG_400x400.jpg" alt="">     
         <div class="posteduserdetails">
           <div class="posteduserinfo">
             <div class="username_displayname"><span class="flex gap-1"><span class="font-bold hover:underline hover:decoration-1">Elon Musk</span><svg viewBox="0 0 24 24" class="w-4 h-4 text-sky-500 text-center relative top-1 " fill="currentColor" xmlns="http://www.w3.org/2000/svg"> 
@@ -695,7 +871,7 @@
 
       <div class="post flex p-3 gap-2 border border-t-1 border-[rgb(74,76,79)]">
 
-        <img class="h-10 rounded-full " src="https://pbs.twimg.com/profile_images/1849727333617573888/HBgPUrjG_400x400.jpg" alt="">     
+        <img class="h-7 md:h-10 rounded-full" src="https://pbs.twimg.com/profile_images/1849727333617573888/HBgPUrjG_400x400.jpg" alt="">     
         <div class="posteduserdetails">
           <div class="posteduserinfo">
             <div class="username_displayname"><span class="flex gap-1"><span class="font-bold">Elon Musk</span><svg viewBox="0 0 24 24" class="w-4 h-4 text-sky-500 text-center relative top-1 " fill="currentColor" xmlns="http://www.w3.org/2000/svg"> 
@@ -930,7 +1106,7 @@
     </div>
 
 
-    <div class="third w-[25vw] h-screen flex flex-col gap-4 overflow-y-auto custom-scrollbar">
+    <div class="third w-[25vw] h-screen flex flex-col gap-4 overflow-y-auto custom-scrollbar hidden md:block">
 
       <div class="search bg-black sticky top-0">
         <div class="bg-customDark px-4 py-2 my-2 w-11/12 rounded-full text-base  ">
