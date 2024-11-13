@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT FIT AND POSITION</title>
+    <style>
+        .container{
+            height: 800px;
+            width: 600px;
+            border: 2px solid;
+
+            /* background-image: url(https://tse2.mm.bing.net/th/id/OIP.KOS9Yxhr_Z8d5MwFK4GyUwHaEK?rs=1&pid=ImgDetMain); */
+            /* background-position:top; */
+            /* background-position:100px 40px; */
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-clip: border-box;
+        }
+        img{
+            height: 400px;
+            width: 300px;
+            object-fit:contain;
+            /* object-fit: cover; */
+            /* object-fit: fill; */
+            /* object-fit: scale-down; */
+
+
+            /* to use object-position we have to  use object-fit: cover; */
+            /* object-position: top; */
+            /* object-position: top right; */
+            /* object-position: top left; */
+            /* object-position: 10px 20px; */
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://onecricketnews.akamaized.net/parth-editor/oc-dashboard/news-images-prod/1711799859438_SRH%20VS%20GT.webp">
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css box</title>
+    <style>
+        .box{
+            background-color: aqua ;
+            
+            
+        }
+        .one{
+            color: black;
+            padding: 10px ;
+            margin: 15  px ;
+            border: 10px solid;
+            height: 200px;
+            box-sizing   : border-box;
+            /* box-sizing:  */
+            /* The CSS box-sizing property allows us to include the padding and 
+            border in  an element's total width and height. */
+            
+            
+        }
+        .two{
+            color: blueviolet;
+            padding: 10px ;
+            margin: 20px ;
+            /* margin collapse -  */
+            /* he CSS margin property is used to set a margin on all four sides of an element */
+            /* margins Top and bottom margins of elements are sometimes collapsed into a single 
+            margin that is equal to the largest of the two. */
+            border: 10px solid;
+            height: 200px;
+            box-sizing   : border-box;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box one">this is div1</div>
+    <div class="box two">this is div2</div>
+    
+</body>
+</html>

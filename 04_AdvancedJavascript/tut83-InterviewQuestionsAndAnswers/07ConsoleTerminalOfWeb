@@ -1,0 +1,18 @@
+        b={"jitu":"l6","chandu":"l5"}
+        // {jitu: 'l6', chandu: 'l5'}
+
+        localStorage.se
+        // undefined
+
+        localStorage.setItem("obj",b)
+        // undefined
+
+        localStorage.getItem("obj")
+        // '[object Object]'
+
+                
+        localStorage.setItem("obj",JSON.stringify(b))
+        // undefined
+
+         localStorage.getItem("obj")
+        // '{"jitu":"l6","chandu":"l5"}' 

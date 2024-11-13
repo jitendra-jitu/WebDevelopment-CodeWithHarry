@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position </title>
+    <style>
+        /* *{
+            margin: 0px;
+            padding: 0px;
+        } */
+        div{
+            border: 2px solid;
+            
+            padding: 12px  ;
+            /* position: relative; */
+            
+            /* top:0px */
+            
+            /* position: relative; */
+            /* EXCEPTION -> transform,filter & perspective can make
+             appear an element as an positioned -(relative) to its parent  */
+             /* transform: translate(0); */
+             /* filter: invert(0); */
+             /* perspective: 0em; */
+
+
+        }
+        .box{
+            
+            border: 5px solid ;
+            padding: 70px;
+            height: 10vh;
+            /* position: absolute; */
+        }
+        .box1{
+
+            /* position:relative; */
+            position: sticky;
+            top: 10px;
+            /* position: fixed; */
+           
+            z-index: 1;
+        }
+        .box2{
+            border-color: aqua;
+            /* position:absolute; */
+            top: 0px ;
+            /* left: 30px;
+            z-index: 1; */ */
+            /* relative to nearest  positioned ancestor */
+        }
+        .box4{
+            /* position: fixed; */
+            bottom: 30px;
+            /* width:1000px */
+        }
+    </style>
+    
+</head>
+<body>
+    <div>
+
+        <div>
+            <p class="box box1">box1</p>
+            <p class="box box2">box2</p>
+            <p class="box box3">box3</p>
+            <p class="box box4">box4</p>
+        </div>
+    </div>
+    </body>
+</html>
+        
+
+
+    
+    

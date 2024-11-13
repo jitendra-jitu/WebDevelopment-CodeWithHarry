@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCISE-4</title>
+    <style>
+        :root{
+            --one:red;
+            --tw0:blue;
+            --three:green;
+            --four:silver;
+        }
+        /* *{
+            margin: 0;
+            padding: 0;       
+        }     */
+        .one{
+            display: flex;
+            border: 2px solid;
+        }
+        div span{
+            border: 2px solid;
+        }
+        .nav1{
+            background-color: var(--one);
+        }
+        .nav2{
+            background-color: var(--tw0);
+        }
+        .nav3{
+            background-color: var(--three);
+        }
+        .nav4{
+            --four:pink;   
+            /* local variable */
+            background-color: var(--four);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="one">
+        <span class="nav1" >nav1</span>
+        <span class="nav2">nav2</span>
+        <span class="nav3">nav3</span>
+        <span class="nav4">nav4</span>
+    </div>
+        
+
+    
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>EXERCISE-7</title>
+    <style>
+        @media only screen and (max-width:650px) {
+            .grid {
+                background-color: #5cb85c;
+                grid-template-columns: 1fr;
+            }
+
+            /* body{
+                background-color: #00b6d1;
+            } */
+        }
+
+
+                
+
+                
+            
+
+
+        nav {
+            display: flex;      
+        }
+
+
+        .container1 {
+            margin-top: 10px;
+            width: 28vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container2 {
+            margin-top: 10px;
+            width: 72vw;
+            font-size: 0.85em;
+            display: flex;
+            gap: 50px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0px 17px;
+        }
+
+        .grid {
+            margin: 7vh auto;
+            /* height: 96vh;
+            width: 66vw;
+            border: 2px; */
+            width: 750px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            /* grid-template-rows:21.5vh 21.5vh 21.5vh 21.5vh ; */
+
+        }
+
+        .items {
+            background-color: #f9f9f9;
+            display: grid;
+            border: 2px;
+            /* wclassth: 22vw;
+            height: 20vh; */
+            grid-template-rows: 30% 30% 40%;
+        }
+
+        .items :nth-child(1) {
+            font-family: 'Segoe UI';
+            font-weight: 700;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .items :nth-child(2) {
+            font-family: 'Segoe UI';
+            font-weight: 400;
+            font-size: 60%;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .download {
+
+            display: flex;
+            /* grid-template-columns:45% 45%; */
+        }
+
+
+
+
+
+        a {
+            text-decoration: none;
+            color: white;
+            width: 40%;
+            height: 1.8em;
+            padding: 6px;
+            text-align: center;
+            border: 2px solclass;
+            border-radius: 6px;
+            font-size: 10px;
+        }
+
+        a:nth-child(1) {
+            background-color: #00b6d1;
+        }
+
+        a:nth-child(2) {
+            background-color: #5cb85c;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <div class="container1">
+                <div class=logo>
+                    <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" height="40px"
+                        alt=">">
+                </div>
+            </div>
+            <div class="container2">
+                <div><span>products</span><img src="https://cdn.hugeicons.com/icons/arrow-down-01-stroke-rounded.svg "
+                        height="15px" alt="arrow-down-01" wclassth="24" height="24" /></div>
+                <div><span>pricing</span><img src="https://cdn.hugeicons.com/icons/arrow-down-01-stroke-rounded.svg "
+                        height="15px" alt="arrow-down-01" wclassth="24" height="24" /></div>
+                <div><span>resources</span><img src="https://cdn.hugeicons.com/icons/arrow-down-01-stroke-rounded.svg "
+                        height="15px" alt="arrow-down-01" wclassth="24" height="24" /></div>
+                <div><span>contact us</span><img src="https://cdn.hugeicons.com/icons/arrow-down-01-stroke-rounded.svg "
+                        height="15px" alt="arrow-down-01" wclassth="24" height="24" /></div>
+                <div><span>security and compliance</span> </div>
+                <div><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"></div>
+            </div>
+        </nav>
+    </div>
+    <div class="grid">
+        <div class="items">
+            <div>English</div>
+            <div>English</div>
+            <div class="download">
+                <a href="ue_english.exe">Download 32-bit</a>
+                <a href="ue_english.exe">Download 64-bit</a>
+            </div>
+        </div>
+
+        <div class="items">
+            <div>Deutsch</div>
+            <div>German</div>
+            <div class="download">
+                <a href="ue_english.exe">Download 32-bit</a>
+                <a href="ue_english.exe">Download 64-bit</a>
+            </div>
+        </div>
+        <div class="items">
+            <div>Italiano</div>
+            <div>Italiano</div>
+            <div class="download">
+                <a href="ue_english.exe">Download 32-bit</a>
+                <a href="ue_english.exe">Download 64-bit</a>
+            </div>
+        </div>
+        <div class="items">
+            <div>Español</div>
+            <div>Spanish</div>
+            <div class="download">
+                <a href="ue_english.exe">Download 32-bit</a>
+                <a href="ue_english.exe">Download 64-bit</a>
+            </div>
+        </div>
+        <div class="items">
+            <div>français</div>
+            <div>french</div>
+            <div class="download">
+                <a href="ue_english.exe">Download 32-bit</a>
+                <a href="ue_english.exe">Download 64-bit</a>
+            </div>
+        </div>
+        <div class="items">
+            <div>Português brasileiro</div>
+            <div>Brazilian Portuguese</div>
+            <div class="download">
+                <a href="ue_english.exe">Download 32-bit</a>
+                <a href="ue_english.exe">Download 64-bit</a>
+            </div>
+        </div>
+
+        <div class="items">
+            <div>日本</div>
+            <div>Japanese</div>
+            <div class="download">
+                <a href="ue_english.exe">Download 32-bit</a>
+                <a href="ue_english.exe">Download 64-bit</a>
+            </div>
+        </div>
+        <div class="items">
+            <div>한국어</div>
+            <div>Korean</div>
+            <div class="download">
+                <a href="ue_english.exe">Download 32-bit</a>
+                <a href="ue_english.exe">Download 64-bit</a>
+            </div>
+        </div>
+        <div class="items">
+            <div>中国</div>
+            <div>Chinese</div>
+            <div class="download">
+                <a href="ue_english.exe">Download 32-bit</a>
+                <a href="ue_english.exe">Download 64-bit</a>
+            </div>
+        </div>
+        <div class="items">
+            <div>中國</div>
+            <div>Traditional Chinese</div>
+            <div class="download">
+                <a href="ue_english.exe">Download 32-bit</a>
+                <a href="ue_english.exe">Download 64-bit</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+

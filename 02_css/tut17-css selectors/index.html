@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        /* div{
+            color: aqua;
+        } */
+        .one{
+            color:cadetblue;
+        }
+        #two{
+            color: blue;
+        }
+
+        /* child selector */
+        div >p{
+            color: aquamarine;
+        }
+
+        /* descendent selector */
+        div p{
+            background-color: aqua;
+        }
+
+        /* universal selector */
+        *{
+            margin: 10px;
+            padding: 2px;
+        }
+        /* pseudo selectors */
+        /* active  won't work while visited is applied  */
+        a:visited{
+            color: aqua;
+        }
+        a:link{
+            color: green;
+        }
+        a.active{
+            background-color:red ;
+        }
+        a:hover{
+            background-color: blueviolet;
+        }
+        p:first-child{
+            background-color: blanchedalmond;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+        <!-- element selector -->
+    <div>
+        this is element selector
+    </div> 
+    
+        <!-- class selectors -->
+    <div class=one >
+        this is class selector 
+    </div>
+
+        <!-- id selector -->
+    <div id ="two">
+        this is id selector
+    </div>
+
+        <!-- child selector  -->
+    <div>
+        <p>this is child selector</p> 
+    </div>
+
+    
+        <!-- descesdent selector  -->
+    <div>
+        <span>
+            <p>this is descesdent selector </p>
+        </span>
+    </div>
+
+        <!-- pseudo selector  -->
+    <div>
+        this are comes under pseudo selectors :
+        <a href="https://www.geeksforgeeks.org/" target="_blank">geeksforgeeks</a>
+        <a href="https://www.facebook.com" target="_blank">facebook</a>
+    </div>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css media queries</title>
+    <style>
+        body{
+            background-color: rgb(28, 210, 15);
+        }
+
+
+        /* Syntax of media query : */
+        /* @media not|only mediatype and (media feature) and (media feature) {
+             CSS-Code;
+        } */
+
+
+        @media screen and (orientation:landscape) {
+            /* landscape -> height < width
+            portrait -> height > width */
+            body{
+                border: 2px solid black;
+            }
+        }
+            
+
+
+        /* if the width is min-width mmentioned and above ,
+        this media query will be appiled to the specific elements  */
+        /* @media only screen and (min-width:455px) {
+            body{
+            background-color: rgb(36, 213, 51);
+            }
+        } */
+
+
+
+        /* if the width is max-width mmentioned and below ,
+        this media query will be appiled to the specific elements  */
+        @media only screen and (max-width:455px) {
+            body{
+                background-color: rgb(197, 17, 17);
+            }
+            .out{
+                flex-direction:column;
+                /* changes the flex of row elements to colomn-wise */
+                flex-direction:column-reverse;
+                /* changes the flex of row elements to colomn-wise and in reverse order too.... */
+            }
+        }
+                
+                
+
+        .out{
+            display: flex;
+            
+            
+        }
+
+        
+        .in{
+            font-size: 100px;
+            height: 244px;
+            width: 244px;
+            background-color: steelblue;
+            border: 2px solid;
+            padding: 3px;
+            margin: 3px;
+            
+
+        }
+            
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <p>this is red body content</p>
+    </div> -->
+
+    <div class="out">
+        <div class="in">1</div>
+        <div class="in">2</div>
+        <div class="in">3</div>
+    </div>
+    
+</body>
+</html>
