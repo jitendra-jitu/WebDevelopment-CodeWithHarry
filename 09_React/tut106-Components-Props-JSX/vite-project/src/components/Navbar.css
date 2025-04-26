@@ -1,0 +1,14 @@
+.navbar{
+    background: coral;
+    position: relative;
+    padding: 10px;
+    margin: 4px;
+    top: 0px;
+
+}
+.navbar ul{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    
+}
